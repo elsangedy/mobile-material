@@ -12,7 +12,7 @@ define(function(require) {
   function configureStates($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider
-      .when('/tabs', '/tabs/stores');
+      .when('/tabs', '/tabs/store');
 
     $stateProvider
       .state('tabs', {
@@ -21,7 +21,7 @@ define(function(require) {
           'master': {
             templateUrl: 'app/tabs/tpl/layout.html',
             controller: 'TabsCtrl',
-            controllerAs: 'vm'
+            controllerAs: 'tabs'
           }
         }
       });

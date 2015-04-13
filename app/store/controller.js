@@ -3,13 +3,13 @@ define(function(require) {
 
   var module = require('./module');
 
-  module.controller('StoresCtrl', StoresCtrl);
+  module.controller('StoreCtrl', StoreCtrl);
 
   //---
 
-  //StoresCtrl.$inject = [];
+  //StoreCtrl.$inject = [];
 
-  function StoresCtrl() {
+  function StoreCtrl() {
     var vm = this;
 
     

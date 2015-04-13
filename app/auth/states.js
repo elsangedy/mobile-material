@@ -18,7 +18,7 @@ define(function(require) {
           'master': {
             templateUrl: 'app/auth/tpl/login.html',
             controller: 'LoginCtrl',
-            controllerAs: 'login'
+            controllerAs: 'vm'
           }
         }
 

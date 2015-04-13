@@ -21,7 +21,7 @@ define(function(require) {
 
       require('app/auth/package').name,
       require('app/tabs/package').name,
-      require('app/stores/package').name,
+      require('app/store/package').name,
       require('app/history/package').name,
       require('app/gamification/package').name,
       require('app/settings/package').name,

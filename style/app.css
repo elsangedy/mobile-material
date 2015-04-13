@@ -61,7 +61,150 @@
   position: absolute;
   text-align: center;
 }
-
+.login-container h2,
+.login-container strong {
+  margin: 40px auto;
+}
+.login-container strong {
+  font-size: 14px;
+}
 .login-container .md-button {
   margin: 0 auto;
+  font-size: 32px;
+}
+
+body,
+md-content {
+  background-color: #ccc !important;
+}
+
+md-tabs .md-header {
+  background-color: #009688 !important;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+  z-index: 3;
+}
+md-tabs md-tabs-ink-bar {
+  color: #fff !important;
+  background-color: #fff !important;
+  height: 4px !important;
+}
+md-tabs .md-header {
+  height: 60px;
+}
+md-tabs md-tab md-tab-label i.mdi {
+  font-size: 22px;
+}
+md-tabs md-tab:not([disabled]) {
+  color: rgba(255,255,255,0.5) !important;
+}
+md-tabs md-tab:not([disabled]).active {
+  color: #fff !important;
+}
+mdd-tabs .md-paginator md-icon {
+  color: #fff !important;
+}
+
+.md-subheader {
+  margin: 0px;
+}
+.md-subheader.md-default-theme {
+  background-color: #ddd;
+  color: rgba(0,0,0,0.5);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}
+.md-subheader:not(.md-sticky-no-effect):after {
+  right: 0;
+}
+
+.lista {
+  background: #fff;
+  box-shadow: 0 5px 5px -2px rgba(0,0,0,.26);
+  width: 100%;
+}
+.lista .item {
+  padding: 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+.lista .titulo {
+  color: rgba(0,0,0,.87);
+  font-weight: 600;
+}
+.lista img {
+  float: left;
+}
+.lista i {
+  float: right;
+  line-height: 70px;
+  font-size: 25px;
+  color: rgba(0,0,0,0.4);
+  margin-right: -5px;
+}
+.lista .conteudo {
+  padding: 0 35px 0 70px;
+}
+.lista .conteudo p {
+  font-size: 12px;
+  color: #777;
+  font-weight: 300;
+  margin: 0;
+}
+.lista .item:hover {
+  background-color: rgba(236,255,55,0.1);
+}
+
+.store-container {
+  height: 600px;
+}
+
+.store-container [layout="row"] {
+  margin-top: 20px;
+  padding: 10px;
+}
+.store-container [layout="row"] + [layout="row"] {
+  margin-top: 0px;
+}
+
+.store-container [flex] {
+  padding: 0 5px;
+  word-break: break-all;
+}
+.store-container [flex]:first-child {
+  padding-left: 0px;
+}
+.store-container [flex] + [flex]:last-child {
+  padding-right: 0px;
+}
+
+.combo {
+  background-color: #fff;
+  box-shadow: 0 5px 5px -2px rgba(0,0,0,.26);
+}
+.combo .titulo {
+  font-size: 14px;
+  border-bottom:  1px solid rgba(0,0,0,0.2);
+  color: rgba(0,0,0,.87);
+  font-weight: 600;
+  padding: 10px 15px;
+}
+.combo .item {
+  padding: 5px;
+}
+.combo .item span {
+  font-size: 12px;
+  color: #777;
+  font-weight: 300;
+}
+.combo .item i {
+  padding: 0 5px;
+}
+.combo .item strong {
+  padding: 10px 5px;
+  display: block;
+  font-weight: 500;
 }

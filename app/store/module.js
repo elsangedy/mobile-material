@@ -9,7 +9,7 @@ define(function(require) {
   return angular.module(
 
     // module name
-    'stores',
+    'store',
 
     // module dependencies
     [

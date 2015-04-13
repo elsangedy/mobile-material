@@ -7,12 +7,20 @@ define(function(require) {
 
   //---
 
-  // LoginCtrl.$inject = [];
+  LoginCtrl.$inject = ['$state'];
 
-  function LoginCtrl() {
+  function LoginCtrl($state) {
     var vm = this;
 
-    
+    vm.login = login;
+
+    //---
+
+    function login($event) {
+      $event.target.disabled = true;
+
+      $state.go('tabs.store');
+    }
   }
 
 });

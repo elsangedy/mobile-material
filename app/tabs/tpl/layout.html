@@ -1,17 +1,26 @@
-<lx-tabs links-tc="light" links-bgc="teal-500" indicator="white" no-divider="true" z-depth="1" active-tab="vm.activeTab">
-  <lx-tab icon="store" href="#/tabs/stores">
-    <div ui-view="stores"></div>
-  </lx-tab>
-
-  <lx-tab icon="history" href="#/tabs/history">
-    <div ui-view="history"></div>
-  </lx-tab>
-
-  <lx-tab icon="trophy" href="#/tabs/gamification">
-  <div ui-view="gamification"></div>
-  </lx-tab>
-
-  <lx-tab icon="menu" href="#/tabs/settings">
-    <div ui-view="settings"></div>
-  </lx-tab>
-</lx-tabs>
+<md-tabs md-selected="tabs.activeTab" md-border-bottom md-stretch-tabs="always" md-center-tabs="true">
+  <md-tab md-on-select="tabs.tabGo('store')">
+    <md-tab-label>
+      <i class="mdi mdi-store"></i>
+    </md-tab-label>
+    <md-tab-template ui-view="store"></md-tab-template>
+  </md-tab>
+  <md-tab md-on-select="tabs.tabGo('history')">
+    <md-tab-label>
+      <i class="mdi mdi-history"></i>
+    </md-tab-label>
+    <md-tab-template ui-view="history"></md-tab-template>
+  </md-tab>
+  <md-tab md-on-select="tabs.tabGo('gamification')">
+    <md-tab-label>
+      <i class="mdi mdi-trophy"></i>
+    </md-tab-label>
+    <md-tab-template ui-view="gamification"></md-tab-template>
+  </md-tab>
+  <md-tab md-on-select="tabs.tabGo('settings')">
+    <md-tab-label>
+      <i class="mdi mdi-menu"></i>
+    </md-tab-label>
+    <md-tab-template ui-view="settings"></md-tab-template>
+  </md-tab>
+</md-tabs>

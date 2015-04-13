@@ -12,12 +12,12 @@ define(function(require) {
   function configureStates($stateProvider) {
 
     $stateProvider
-      .state('tabs.stores', {
-        url: '/stores',
+      .state('tabs.store', {
+        url: '/store',
         views: {
-          'stores': {
-            templateUrl: 'app/stores/tpl/layout.html',
-            controller: 'StoresCtrl',
+          'store': {
+            templateUrl: 'app/store/tpl/layout.html',
+            controller: 'StoreCtrl',
             controllerAs: 'vm'
           }
         }
